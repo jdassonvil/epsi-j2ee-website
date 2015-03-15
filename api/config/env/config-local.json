@@ -1,0 +1,13 @@
+ {
+    "logger": {
+        "console": true, 
+        "filename": "../logs/server.log",
+        "file": false,
+        "json": false,
+        "level": "debug"
+    },
+    "app": {
+	"serverPort": 3000,
+        "shutdownTimeout": 10000
+    }
+}

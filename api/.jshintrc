@@ -1,0 +1,11 @@
+{
+	"node"		: true,
+	"bitwise"       : true,
+	"camelcase"     : false,
+	"curly"         : true,
+	"indent"        : 4,
+	"noempty"       : true,
+	"unused"        : true,
+	"strict"	: false,
+	"latedef"       : false
+}

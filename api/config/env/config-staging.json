@@ -1,0 +1,11 @@
+{
+    "logger": {
+        "console": true, 
+        "file": false,
+        "level": "debug"
+    },
+    "app": {
+        "serverPort": 80,
+        "shutdownTimeout": 10000
+    }
+}
