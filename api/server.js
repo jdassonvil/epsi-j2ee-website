@@ -5,6 +5,8 @@ var express = require('express');
 var logger  = require('./tools/logger');
 var config  = require('./config/config');
 
+var menuAPI = require('./router/menu');
+
 var app = express();
 var gracefullyClosing = false;
 var server = null;
@@ -19,6 +21,8 @@ function start(path) {
 		app.use(express.static(path));
 		logger.info("Express server serves static content from " + path);
 	}
+
+    app.use('/menu', menuAPI.router);
 
 	app.use(function(req, res, next){
         	res.setHeader('Content-Type', 'text/plain');
