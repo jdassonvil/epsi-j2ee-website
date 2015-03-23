@@ -1,7 +1,8 @@
 var Backbone = require('backbone');
 var $ = require('jquery');
-var template = require("../../template/home.hbs");
 Backbone.$ = $;
+
+var template = require("../../template/home.hbs");
 
 var HomeView = Backbone.View.extend({
   initialize: function(){
